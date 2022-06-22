@@ -2,14 +2,6 @@
 # yarn lockfile v1
 
 
-"@ampproject/remapping@^2.1.0":
-  "integrity" "sha512-qRmjj8nj9qmLTQXXmaR1cck3UXSRMPrbsLJAasZpF+t3riI71BXed5ebIOYwQntykeZuhjsdweEc9BxH5Jc26w=="
-  "resolved" "https://registry.npmjs.org/@ampproject/remapping/-/remapping-2.2.0.tgz"
-  "version" "2.2.0"
-  dependencies:
-    "@jridgewell/gen-mapping" "^0.1.0"
-    "@jridgewell/trace-mapping" "^0.3.9"
-
 "@apideck/better-ajv-errors@^0.3.1":
   "integrity" "sha512-Ic2d8ZT6HJiSikGVQvSklaFyw1OUv4g8sDOxa0PXSlbmN/3gL5IO1WYY9DOwTDqOFmjWoqG1yaaKnPDqYCE9KA=="
   "resolved" "https://registry.npmjs.org/@apideck/better-ajv-errors/-/better-ajv-errors-0.3.4.tgz"
@@ -1618,14 +1610,6 @@
     "@types/yargs" "^17.0.8"
     "chalk" "^4.0.0"
 
-"@jridgewell/gen-mapping@^0.1.0":
-  "integrity" "sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w=="
-  "resolved" "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.1.1.tgz"
-  "version" "0.1.1"
-  dependencies:
-    "@jridgewell/set-array" "^1.0.0"
-    "@jridgewell/sourcemap-codec" "^1.4.10"
-
 "@jridgewell/gen-mapping@^0.3.0":
   "integrity" "sha512-GcHwniMlA2z+WFPWuY8lp3fsza0I8xPFMWL5+n8LYyP6PSvPrXf4+n8stDHZY2DM0zy9sVkRDy1jDI4XGzYVqg=="
   "resolved" "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.1.tgz"
@@ -1706,6 +1690,11 @@
     "loader-utils" "^2.0.0"
     "schema-utils" "^3.0.0"
     "source-map" "^0.7.3"
+
+"@react-leaflet/core@^2.0.0":
+  "integrity" "sha512-SQQ5DCQIaLzvslN6wCXs5OWqtlvk1Ubv2n5d7zTM8SDl9hM5Rr2wVy7/nOCIY958D75/ovhq6ZoSvT7GLCX6sg=="
+  "resolved" "https://registry.npmjs.org/@react-leaflet/core/-/core-2.0.0.tgz"
+  "version" "2.0.0"
 
 "@rollup/plugin-babel@^5.2.0":
   "integrity" "sha512-WFfdLWU/xVWKeRQnKmIAQULUI7Il0gZnBIH/ZFO069wYIfPu+8zrfp/KMW0atmELoRDq8FbiP3VCss9MhCut7Q=="
@@ -2156,6 +2145,11 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
+"@types/geojson@*":
+  "integrity" "sha512-1rkryxURpr6aWP7R786/UQOkJ3PcpQiWkAXBmdWc7ryFWqN6a4xfK7BtjXvFBKO9LjQ+MWQSWxYeZX1OApnArA=="
+  "resolved" "https://registry.npmjs.org/@types/geojson/-/geojson-7946.0.8.tgz"
+  "version" "7946.0.8"
+
 "@types/graceful-fs@^4.1.2":
   "integrity" "sha512-anKkLmZZ+xm4p8JWBf4hElkM4XR+EZeA2M9BAkkTldmcyDY4mbdIJnRghDJH3Ov5ooY7/UAoENtmdMSkaAd7Cw=="
   "resolved" "https://registry.npmjs.org/@types/graceful-fs/-/graceful-fs-4.1.5.tgz"
@@ -2227,6 +2221,20 @@
   "integrity" "sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ=="
   "resolved" "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   "version" "0.0.29"
+
+"@types/leaflet-draw@^1.0.5":
+  "integrity" "sha512-m/vmhI1XjiBZphwKwmmcOoxbMd0ybN78uZb1c9//zOG0aWVYJd3XTnIW1pnPhxhIB4EB1tgjmWjq0YQM/IyuXg=="
+  "resolved" "https://registry.npmjs.org/@types/leaflet-draw/-/leaflet-draw-1.0.5.tgz"
+  "version" "1.0.5"
+  dependencies:
+    "@types/leaflet" "*"
+
+"@types/leaflet@*", "@types/leaflet@^1.7.11":
+  "integrity" "sha512-VwAYom2pfIAf/pLj1VR5aLltd4tOtHyvfaJlNYCoejzP2nu52PrMi1ehsLRMUS+bgafmIIKBV1cMfKeS+uJ0Vg=="
+  "resolved" "https://registry.npmjs.org/@types/leaflet/-/leaflet-1.7.11.tgz"
+  "version" "1.7.11"
+  dependencies:
+    "@types/geojson" "*"
 
 "@types/mime@^1":
   "integrity" "sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw=="
@@ -6230,6 +6238,16 @@
   dependencies:
     "language-subtag-registry" "~0.3.2"
 
+"leaflet-draw@^1.0.4":
+  "integrity" "sha512-rsQ6saQO5ST5Aj6XRFylr5zvarWgzWnrg46zQ1MEOEIHsppdC/8hnN8qMoFvACsPvTioAuysya/TVtog15tyAQ=="
+  "resolved" "https://registry.npmjs.org/leaflet-draw/-/leaflet-draw-1.0.4.tgz"
+  "version" "1.0.4"
+
+"leaflet@^1.8.0":
+  "integrity" "sha512-gwhMjFCQiYs3x/Sf+d49f10ERXaEFCPr+nVTryhAW8DWbMGqJqt9G4XuIaHmFW08zYvhgdzqXGr8AlW8v8dQkA=="
+  "resolved" "https://registry.npmjs.org/leaflet/-/leaflet-1.8.0.tgz"
+  "version" "1.8.0"
+
 "leven@^3.1.0":
   "integrity" "sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A=="
   "resolved" "https://registry.npmjs.org/leven/-/leven-3.1.0.tgz"
@@ -7706,6 +7724,13 @@
   "integrity" "sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   "version" "18.2.0"
+
+"react-leaflet@^4.0.0":
+  "integrity" "sha512-qJJvoCNe12XHSWVUwhXYmMObPoSYy8h/hn0aDNvcBuq3O8zmVI5S2RdabhaDg/iWMCJ2jbCWZWtIU5VtztO9sg=="
+  "resolved" "https://registry.npmjs.org/react-leaflet/-/react-leaflet-4.0.0.tgz"
+  "version" "4.0.0"
+  dependencies:
+    "@react-leaflet/core" "^2.0.0"
 
 "react-refresh@^0.11.0", "react-refresh@>=0.10.0 <1.0.0":
   "integrity" "sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A=="
