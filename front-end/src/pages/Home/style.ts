@@ -9,9 +9,15 @@ import { BoxProps } from 'reflexbox'
 
 export const Wrapper = styled(Flex)`
   flex-wrap: wrap;
-  display: flex;
+  justify-Content: center;
+  align-Items: center;
+  align-Content: center;
 `
 
 export const Container = styled(Box)<BoxProps>`
-  justify-Content: center;
+  padding: 2rem;
+`
+
+export const MapId = styled.div`
+
 `
