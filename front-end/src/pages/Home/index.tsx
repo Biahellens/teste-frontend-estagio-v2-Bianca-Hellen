@@ -1,43 +1,62 @@
 //dependencies
-import React, { useEffect } from 'react';
-import L from "leaflet";
-import "leaflet-draw/dist/leaflet.draw.css";
-const leafletDraw = require('leaflet-draw');
+import React, { useEffect } from 'react'
+import L from 'leaflet'
+import 'leaflet-draw/dist/leaflet.draw.css'
+const leafletDraw = require('leaflet-draw')
 
 //componentes
-import { Container, MapId, Wrapper } from './style';
-import './index.css';
+import { Container, MapId, Wrapper } from './style'
+import './index.css'
 
 //images
-import aiko from '../../assets/aiko.png';
+import aiko from '../../assets/aiko.png'
 
-export function Home(){
+export function Home() {
   useEffect(() => {
-    const map = L.map('mapid').setView([51.505, -0.09], 13);
-   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-   }).addTo(map);
+    const map = L.map('mapid').setView([-23.5489, -46.6388], 13)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution:
+        '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map)
+
+  //Function de pointers
+  function onEachFeature(feature, layer) {
+    if (feature.properties && feature.properties.popupContent) {
+      layer.bindPopup(feature.properties.popupContent)
+    }
+  }
+
+  const geojsonFeature : GeoJSON.FeatureCollection<any> =  {
+    type: 'FeatureCollection',
+    features: [
+      {
+        type: 'Feature',
+        properties: {
+          name: 'Coors Field',
+          amenity: 'Baseball Stadium',
+          popupContent: 'This is where the Rockies play!',
+        },
+        geometry: {
+          type: 'Point',
+          coordinates: [-46.5489, -23.5344],
+        },
+      },
+    ],
+  }
+
+  L.geoJSON(geojsonFeature, { onEachFeature: onEachFeature }).addTo(map)
 
 
-  // FeatureGroup is to store editable layers
-  const drawnItems = new L.FeatureGroup();
-  map.addLayer(drawnItems);
-  const drawControl = new L.Control.Draw({
-      edit: {
-          featureGroup: drawnItems
-      }
-  });
-  map.addControl(drawControl);
 
+})
 
-  });
-  return(
+  return (
     <Wrapper>
       <Container width={[1]}>
         <img src={aiko} className="App-logo" alt="logo" />
       </Container>
       <Container width={[1]}>
-        <MapId id="mapid"/>
+        <MapId id="mapid" />
       </Container>
     </Wrapper>
   )
