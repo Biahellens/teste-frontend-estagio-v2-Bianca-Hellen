@@ -7,14 +7,14 @@ const variants = {
   prop: 'variant',
   variants: {
     primary: {
-      fontSize: '16px',
-      color: '#1E90FF',
+      fontSize: '20px',
+      color: '#00BFFF',
       marginTop: '4px',
     },
 
     primaryBold: {
-      fontSize: '16px',
-      color: '#1E90FF',
+      fontSize: '24px',
+      color: '#00BFFF',
       fontWeight: 'bold'
     },
   }
