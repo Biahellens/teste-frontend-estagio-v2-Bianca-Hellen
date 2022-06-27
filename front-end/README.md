@@ -17,7 +17,7 @@ Para o desenvolvimento deste projeto, foi utilizado as seguintes tecnologias:
 - [Npm](https://yarnpkg.com/);
 - [TypeScript](https://www.typescriptlang.org/).
 ## Inicializando
-O desenvolvimento foi a partir do React com template typescript. Foi utilizado do [MapBox](https://www.mapbox.com/search-service) para gerar latitude e longitude de um endereço pesquisado. Antes de iniciar, precisa-se instalar as dependências, para isso utilizamos o npm como nosso gerenciador de dependencias e xecutar o seguinte comando no terminar:
+O desenvolvimento foi a partir do React com template typescript. Foi utilizado do [MapBox](https://www.mapbox.com/search-service) para gerar latitude e longitude de um endereço pesquisado, para uso acabei deixando o arquivo .env vísivel mesmo sendo "errado". Antes de iniciar, precisa-se instalar as dependências, para isso utilizamos o npm como nosso gerenciador de dependencias e executar o seguinte comando no terminar:
 
 ```bash
 $ npm i
